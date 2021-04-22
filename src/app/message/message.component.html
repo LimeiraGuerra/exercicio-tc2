@@ -1,0 +1,6 @@
+<h2>Mensagens:</h2>
+<p *ngFor="let message of messages">
+    <span [ngClass]="{'important': message.important}">
+        {{message.text}}
+    </span>
+</p>
